@@ -26,6 +26,7 @@ Validate App, Object and fields in Salesforce Application
     AppObjectNavigation.Select App  @{AppName}[0]
     AppObjectNavigation.Select Object  @{ObjectName}[0]
     ${FieldsName} =  ExcelDataManager.Get Fields Data  ${FILEPATH}
+    log  ${FieldsName}
     AppObjectNavigation.validate fields  ${FieldsName}
 
 

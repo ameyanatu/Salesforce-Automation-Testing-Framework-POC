@@ -19,4 +19,6 @@ Select Object
     run keyword and continue on failure  wait until page contains  Accounts
 validate fields
     [Arguments]  ${FieldsName}
-    log  $[FieldsName]
+    click element  xpath=//*[@id="hotlist"]/table/tbody/tr/td[2]/input
+    :FOR  ${FieldsName}  IN  @{FieldsName}
+    \  run keyword and continue on failure  wait until page contains  ${FieldsName}

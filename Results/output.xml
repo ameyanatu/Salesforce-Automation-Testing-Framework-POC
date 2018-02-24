@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20180224 20:08:33.308" generator="Robot 3.0.2 (Python 2.7.14 on win32)">
+<robot generated="20180224 21:26:54.583" generator="Robot 3.0.2 (Python 2.7.14 on win32)">
 <suite source="C:\Users\user\PycharmProjects\Salesforce Automation Testing Framework\tests\SalesforceTest.robot" id="s1" name="SalesforceTest">
 <test id="s1-t1" name="Validate App, Object and fields in Salesforce Application">
 <kw type="setup" name="Begin Web Test" library="CommonWeb">
@@ -9,14 +9,14 @@
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20180224 20:08:34.491" level="INFO">Opening browser 'chrome' to base url 'https://login.salesforce.com'</msg>
-<status status="PASS" endtime="20180224 20:08:46.464" starttime="20180224 20:08:34.490"></status>
+<msg timestamp="20180224 21:26:55.751" level="INFO">Opening browser 'chrome' to base url 'https://login.salesforce.com'</msg>
+<status status="PASS" endtime="20180224 21:27:09.191" starttime="20180224 21:26:55.751"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20180224 20:08:47.691" starttime="20180224 20:08:46.464"></status>
+<status status="PASS" endtime="20180224 21:27:10.452" starttime="20180224 21:27:09.192"></status>
 </kw>
-<status status="PASS" endtime="20180224 20:08:47.691" starttime="20180224 20:08:34.490"></status>
+<status status="PASS" endtime="20180224 21:27:10.453" starttime="20180224 21:26:55.750"></status>
 </kw>
 <kw name="Get UserName Data" library="ExcelDataManager">
 <arguments>
@@ -32,13 +32,13 @@
 <assign>
 <var>${DATA}</var>
 </assign>
-<msg timestamp="20180224 20:08:47.765" level="INFO">${DATA} = 0    ameyanatu@abn.com
+<msg timestamp="20180224 21:27:10.523" level="INFO">${DATA} = 0    ameyanatu@abn.com
 Name: Username, dtype: object</msg>
-<status status="PASS" endtime="20180224 20:08:47.766" starttime="20180224 20:08:47.694"></status>
+<status status="PASS" endtime="20180224 21:27:10.523" starttime="20180224 21:27:10.454"></status>
 </kw>
-<msg timestamp="20180224 20:08:47.767" level="INFO">${Username} = 0    ameyanatu@abn.com
+<msg timestamp="20180224 21:27:10.526" level="INFO">${Username} = 0    ameyanatu@abn.com
 Name: Username, dtype: object</msg>
-<status status="PASS" endtime="20180224 20:08:47.767" starttime="20180224 20:08:47.692"></status>
+<status status="PASS" endtime="20180224 21:27:10.526" starttime="20180224 21:27:10.454"></status>
 </kw>
 <kw name="Get PassWord Data" library="ExcelDataManager">
 <arguments>
@@ -54,29 +54,29 @@ Name: Username, dtype: object</msg>
 <assign>
 <var>${DATA}</var>
 </assign>
-<msg timestamp="20180224 20:08:47.818" level="INFO">${DATA} = 0    Tuffynatu@1373
+<msg timestamp="20180224 21:27:10.563" level="INFO">${DATA} = 0    Tuffynatu@1373
 Name: Password, dtype: object</msg>
-<status status="PASS" endtime="20180224 20:08:47.819" starttime="20180224 20:08:47.771"></status>
+<status status="PASS" endtime="20180224 21:27:10.563" starttime="20180224 21:27:10.530"></status>
 </kw>
-<msg timestamp="20180224 20:08:47.821" level="INFO">${Password} = 0    Tuffynatu@1373
+<msg timestamp="20180224 21:27:10.564" level="INFO">${Password} = 0    Tuffynatu@1373
 Name: Password, dtype: object</msg>
-<status status="PASS" endtime="20180224 20:08:47.821" starttime="20180224 20:08:47.768"></status>
+<status status="PASS" endtime="20180224 21:27:10.564" starttime="20180224 21:27:10.527"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>@{Username}[0]</arg>
 </arguments>
-<msg timestamp="20180224 20:08:47.823" level="INFO">ameyanatu@abn.com</msg>
-<status status="PASS" endtime="20180224 20:08:47.823" starttime="20180224 20:08:47.822"></status>
+<msg timestamp="20180224 21:27:10.566" level="INFO">ameyanatu@abn.com</msg>
+<status status="PASS" endtime="20180224 21:27:10.566" starttime="20180224 21:27:10.565"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>@{Password}[0]</arg>
 </arguments>
-<msg timestamp="20180224 20:08:47.826" level="INFO">Tuffynatu@1373</msg>
-<status status="PASS" endtime="20180224 20:08:47.826" starttime="20180224 20:08:47.825"></status>
+<msg timestamp="20180224 21:27:10.567" level="INFO">Tuffynatu@1373</msg>
+<status status="PASS" endtime="20180224 21:27:10.567" starttime="20180224 21:27:10.567"></status>
 </kw>
 <kw name="Enter Credentials and submit" library="Login">
 <arguments>
@@ -88,14 +88,14 @@ Name: Password, dtype: object</msg>
 <arguments>
 <arg>${UserNameElement}</arg>
 </arguments>
-<status status="PASS" endtime="20180224 20:08:48.084" starttime="20180224 20:08:47.828"></status>
+<status status="PASS" endtime="20180224 21:27:10.774" starttime="20180224 21:27:10.569"></status>
 </kw>
 <kw name="Clear Element Text" library="Selenium2Library">
 <doc>Clears the text value of text entry element identified by `locator`.</doc>
 <arguments>
 <arg>${PassWordElement}</arg>
 </arguments>
-<status status="PASS" endtime="20180224 20:08:48.434" starttime="20180224 20:08:48.084"></status>
+<status status="PASS" endtime="20180224 21:27:11.040" starttime="20180224 21:27:10.774"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -103,8 +103,8 @@ Name: Password, dtype: object</msg>
 <arg>${UserNameElement}</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20180224 20:08:48.435" level="INFO">Typing text 'ameyanatu@abn.com' into text field 'xpath=//*[@id="username"]'</msg>
-<status status="PASS" endtime="20180224 20:08:48.883" starttime="20180224 20:08:48.434"></status>
+<msg timestamp="20180224 21:27:11.042" level="INFO">Typing text 'ameyanatu@abn.com' into text field 'xpath=//*[@id="username"]'</msg>
+<status status="PASS" endtime="20180224 21:27:11.434" starttime="20180224 21:27:11.041"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -112,26 +112,26 @@ Name: Password, dtype: object</msg>
 <arg>${PassWordElement}</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20180224 20:08:48.884" level="INFO">Typing text 'Tuffynatu@1373' into text field 'xpath=//*[@id="password"]'</msg>
-<status status="PASS" endtime="20180224 20:08:49.213" starttime="20180224 20:08:48.884"></status>
+<msg timestamp="20180224 21:27:11.435" level="INFO">Typing text 'Tuffynatu@1373' into text field 'xpath=//*[@id="password"]'</msg>
+<status status="PASS" endtime="20180224 21:27:11.859" starttime="20180224 21:27:11.434"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>${SubmitElement}</arg>
 </arguments>
-<msg timestamp="20180224 20:08:49.214" level="INFO">Clicking button 'xpath=//*[@id="Login"]'.</msg>
-<status status="PASS" endtime="20180224 20:08:55.394" starttime="20180224 20:08:49.213"></status>
+<msg timestamp="20180224 21:27:11.860" level="INFO">Clicking button 'xpath=//*[@id="Login"]'.</msg>
+<status status="PASS" endtime="20180224 21:27:15.215" starttime="20180224 21:27:11.859"></status>
 </kw>
-<status status="PASS" endtime="20180224 20:08:55.394" starttime="20180224 20:08:47.827"></status>
+<status status="PASS" endtime="20180224 21:27:15.215" starttime="20180224 21:27:10.568"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20180224 20:08:58.396" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20180224 20:08:58.396" starttime="20180224 20:08:55.396"></status>
+<msg timestamp="20180224 21:27:18.217" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20180224 21:27:18.217" starttime="20180224 21:27:15.216"></status>
 </kw>
 <kw name="Get App Data" library="ExcelDataManager">
 <arguments>
@@ -147,13 +147,13 @@ Name: Password, dtype: object</msg>
 <assign>
 <var>${DATA}</var>
 </assign>
-<msg timestamp="20180224 20:08:58.436" level="INFO">${DATA} = 0    Service
+<msg timestamp="20180224 21:27:18.266" level="INFO">${DATA} = 0    Service
 Name: Apps, dtype: object</msg>
-<status status="PASS" endtime="20180224 20:08:58.436" starttime="20180224 20:08:58.399"></status>
+<status status="PASS" endtime="20180224 21:27:18.266" starttime="20180224 21:27:18.221"></status>
 </kw>
-<msg timestamp="20180224 20:08:58.438" level="INFO">${AppName} = 0    Service
+<msg timestamp="20180224 21:27:18.268" level="INFO">${AppName} = 0    Service
 Name: Apps, dtype: object</msg>
-<status status="PASS" endtime="20180224 20:08:58.438" starttime="20180224 20:08:58.398"></status>
+<status status="PASS" endtime="20180224 21:27:18.268" starttime="20180224 21:27:18.219"></status>
 </kw>
 <kw name="Get Object Data" library="ExcelDataManager">
 <arguments>
@@ -169,29 +169,29 @@ Name: Apps, dtype: object</msg>
 <assign>
 <var>${DATA}</var>
 </assign>
-<msg timestamp="20180224 20:08:58.473" level="INFO">${DATA} = 0    Accounts
+<msg timestamp="20180224 21:27:18.302" level="INFO">${DATA} = 0    Accounts
 Name: Objects, dtype: object</msg>
-<status status="PASS" endtime="20180224 20:08:58.474" starttime="20180224 20:08:58.439"></status>
+<status status="PASS" endtime="20180224 21:27:18.302" starttime="20180224 21:27:18.269"></status>
 </kw>
-<msg timestamp="20180224 20:08:58.475" level="INFO">${ObjectName} = 0    Accounts
+<msg timestamp="20180224 21:27:18.303" level="INFO">${ObjectName} = 0    Accounts
 Name: Objects, dtype: object</msg>
-<status status="PASS" endtime="20180224 20:08:58.475" starttime="20180224 20:08:58.439"></status>
+<status status="PASS" endtime="20180224 21:27:18.303" starttime="20180224 21:27:18.269"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>@{AppName}[0]</arg>
 </arguments>
-<msg timestamp="20180224 20:08:58.477" level="INFO">Service</msg>
-<status status="PASS" endtime="20180224 20:08:58.477" starttime="20180224 20:08:58.477"></status>
+<msg timestamp="20180224 21:27:18.306" level="INFO">Service</msg>
+<status status="PASS" endtime="20180224 21:27:18.306" starttime="20180224 21:27:18.305"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>@{ObjectName}[0]</arg>
 </arguments>
-<msg timestamp="20180224 20:08:58.479" level="INFO">Accounts</msg>
-<status status="PASS" endtime="20180224 20:08:58.479" starttime="20180224 20:08:58.478"></status>
+<msg timestamp="20180224 21:27:18.307" level="INFO">Accounts</msg>
+<status status="PASS" endtime="20180224 21:27:18.307" starttime="20180224 21:27:18.307"></status>
 </kw>
 <kw name="Select App" library="AppObjectNavigation">
 <arguments>
@@ -202,38 +202,139 @@ Name: Objects, dtype: object</msg>
 <arguments>
 <arg>${AppChooserElement}</arg>
 </arguments>
-<msg timestamp="20180224 20:08:58.481" level="INFO">Clicking element 'xpath=//*[@id="tsidButton"]'.</msg>
+<msg timestamp="20180224 21:27:18.310" level="INFO">Clicking element 'xpath=//*[@id="tsidButton"]'.</msg>
+<status status="PASS" endtime="20180224 21:27:27.821" starttime="20180224 21:27:18.309"></status>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>wait until page contains element</arg>
+<arg>link=${AppName}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>link=${AppName}</arg>
+</arguments>
 <kw name="Capture Page Screenshot" library="Selenium2Library">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20180224 20:08:59.074" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20180224 20:08:59.074" starttime="20180224 20:08:58.531"></status>
+<msg timestamp="20180224 21:27:33.554" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180224 21:27:33.555" starttime="20180224 21:27:33.104"></status>
 </kw>
-<msg timestamp="20180224 20:08:59.077" level="FAIL">ValueError: Element locator 'xpath=//*[@id="tsidButton"]' did not match any elements.</msg>
-<status status="FAIL" endtime="20180224 20:08:59.077" starttime="20180224 20:08:58.480"></status>
+<msg timestamp="20180224 21:27:33.557" level="FAIL">Element 'link=Service' did not appear in 5 seconds</msg>
+<status status="FAIL" endtime="20180224 21:27:33.557" starttime="20180224 21:27:27.822"></status>
 </kw>
-<status status="FAIL" endtime="20180224 20:08:59.077" starttime="20180224 20:08:58.480"></status>
+<status status="PASS" endtime="20180224 21:27:33.557" starttime="20180224 21:27:27.821"></status>
+</kw>
+<status status="PASS" endtime="20180224 21:27:33.558" starttime="20180224 21:27:18.308"></status>
+</kw>
+<kw name="Select Object" library="AppObjectNavigation">
+<arguments>
+<arg>@{ObjectName}[0]</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>link=${ObjectName}</arg>
+</arguments>
+<status status="PASS" endtime="20180224 21:27:33.813" starttime="20180224 21:27:33.559"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>click element</arg>
+<arg>link=${ObjectName}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>link=${ObjectName}</arg>
+</arguments>
+<msg timestamp="20180224 21:27:33.814" level="INFO">Clicking element 'link=Accounts'.</msg>
+<status status="PASS" endtime="20180224 21:27:37.564" starttime="20180224 21:27:33.814"></status>
+</kw>
+<status status="PASS" endtime="20180224 21:27:37.564" starttime="20180224 21:27:33.813"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>wait until page contains</arg>
+<arg>Accounts</arg>
+</arguments>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Accounts</arg>
+</arguments>
+<status status="PASS" endtime="20180224 21:27:37.621" starttime="20180224 21:27:37.565"></status>
+</kw>
+<status status="PASS" endtime="20180224 21:27:37.621" starttime="20180224 21:27:37.564"></status>
+</kw>
+<status status="PASS" endtime="20180224 21:27:37.621" starttime="20180224 21:27:33.558"></status>
+</kw>
+<kw name="Get Fields Data" library="ExcelDataManager">
+<arguments>
+<arg>${FILEPATH}</arg>
+</arguments>
+<assign>
+<var>${FieldsName}</var>
+</assign>
+<kw name="Read Fields" library="ReadExcelFile">
+<arguments>
+<arg>${FILENAME}</arg>
+</arguments>
+<assign>
+<var>${DATA}</var>
+</assign>
+<msg timestamp="20180224 21:27:37.651" level="INFO">${DATA} = [u'Account Name', u' Account Number', u' Account Owner']</msg>
+<status status="PASS" endtime="20180224 21:27:37.651" starttime="20180224 21:27:37.623"></status>
+</kw>
+<msg timestamp="20180224 21:27:37.651" level="INFO">${FieldsName} = [u'Account Name', u' Account Number', u' Account Owner']</msg>
+<status status="PASS" endtime="20180224 21:27:37.651" starttime="20180224 21:27:37.622"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${FieldsName}</arg>
+</arguments>
+<msg timestamp="20180224 21:27:37.653" level="INFO">[u'Account Name', u' Account Number', u' Account Owner']</msg>
+<status status="PASS" endtime="20180224 21:27:37.653" starttime="20180224 21:27:37.652"></status>
+</kw>
+<kw name="validate fields" library="AppObjectNavigation">
+<arguments>
+<arg>${FieldsName}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>$[FieldsName]</arg>
+</arguments>
+<msg timestamp="20180224 21:27:37.654" level="INFO">$[FieldsName]</msg>
+<status status="PASS" endtime="20180224 21:27:37.654" starttime="20180224 21:27:37.654"></status>
+</kw>
+<status status="PASS" endtime="20180224 21:27:37.655" starttime="20180224 21:27:37.654"></status>
 </kw>
 <kw type="teardown" name="End Web Test" library="CommonWeb">
 <kw name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20180224 20:09:02.368" starttime="20180224 20:08:59.079"></status>
+<status status="PASS" endtime="20180224 21:27:40.968" starttime="20180224 21:27:37.656"></status>
 </kw>
-<status status="PASS" endtime="20180224 20:09:02.369" starttime="20180224 20:08:59.078"></status>
+<status status="PASS" endtime="20180224 21:27:40.969" starttime="20180224 21:27:37.655"></status>
 </kw>
-<status status="FAIL" endtime="20180224 20:09:02.371" critical="yes" starttime="20180224 20:08:34.488">ValueError: Element locator 'xpath=//*[@id="tsidButton"]' did not match any elements.</status>
+<status status="PASS" endtime="20180224 21:27:40.973" critical="yes" starttime="20180224 21:26:55.749"></status>
 </test>
 <doc>This is a index file to test Salesforce Application</doc>
-<status status="FAIL" endtime="20180224 20:09:02.380" starttime="20180224 20:08:33.317"></status>
+<status status="PASS" endtime="20180224 21:27:40.980" starttime="20180224 21:26:54.592"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="1" pass="0">Critical Tests</stat>
-<stat fail="1" pass="0">All Tests</stat>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="1" id="s1" name="SalesforceTest" pass="0">SalesforceTest</stat>
+<stat fail="0" id="s1" name="SalesforceTest" pass="1">SalesforceTest</stat>
 </suite>
 </statistics>
 <errors>
